@@ -181,12 +181,18 @@ footer p{
   header{
     display: flex;
     flex-direction: column;
-    height: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
     width: 100%;
     text-align: center;
     position: static;
+    margin: auto;
   }
 
+  header .logo {
+    padding-right: 45px;
+  }
 
   header nav a {
     display: inline-block;
