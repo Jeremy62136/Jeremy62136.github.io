@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  font-family: 'Lobster Two', cursive;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+a{
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
+  color: antiquewhite;
+}
+
+a:hover{
+  color: #652B7A;
+  transition: 800ms;
+  text-shadow: 1px 1px 1px #652B7A;
+}
+
+.logo{
+  font-size: 40px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+p{
+  color: #652B7A;
+  font-weight: 900;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  height: 80px;
+  background-color: palevioletred;
+  position: sticky;
+  top: 0px;
+  opacity: 0.8;
+  width: 100%;
+  margin-top: 0;
+}
+
+header nav a{
+  margin-right: 40px;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: normal;
+  background-color: palevioletred;
+  text-shadow: 1px 1px 1px black;
+  height: 40px;
+  width: 200px;
+  margin: 70px auto 70px;
+  border-radius: 50px 0px 50px 0px;
+}
+
+p{
+  text-align: center;
+  width: 800px;
+  margin: auto;
+  font-size: 20px;
+}
+
+#photos h2{
+  width: 300px;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  border: 7px solid palevioletred;
+  box-shadow: 10px 10px 10px #652B7A;
+  border-radius: 25%;
+}
+
+img:hover{
+  border: 7px solid #652B7A
+  ;
+  transition: 800ms;
+  box-shadow: 10px 10px 10px palevioletred;
+  cursor: pointer;
+}
+
+.first,
+.second{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+
+#contact h2{
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+
+form{
+  text-align: center;
+
+}
+
+label{
+  color: palevioletred;
+  font-size: 30px;
+}
+
+input{
+  display: block;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #652B7A;
+  font-weight: bold;
+  border: 3px solid palevioletred;
+  border-radius: 5px;
+}
+
+textarea{
+  width: 500px;
+  height: 100px;
+  font-size: 20px;
+  color: #652B7A;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid palevioletred;
+}
+
+textarea::placeholder,input::placeholder{
+  color: #652B7A;
+  opacity: 0.7;
+}
+
+.validation {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  margin: 15px auto 30px;
+}
+
+.validation:hover{
+  border: 3px solid #652B7A;
+  font-size: 22px;
+  color: palevioletred;
+  transition: 800ms;
+  cursor: pointer;
+
+}
+
+footer{
+  background-color: palevioletred;
+  height: 100px;
+  text-align: center;
+}
+
+footer a{
+  width: 300px;
+  margin: auto;
+}
+
+footer p{
+  width: 300px;
+  padding-left: 40px;
+}
+
+@media screen and (max-width:920px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+
+
+  header nav a {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  #description p{
+    width: 80%;
+  }
+
+
+  .first{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  .second{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  textarea{
+    width: 80%;
+  }
+  
+}
