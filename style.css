@@ -186,11 +186,14 @@ footer p{
     position: static;
   }
 
+  header .logo{
+    margin-left: -20px;
+  }
+
 
   header nav a {
-    display: inline-block;
-    margin-left: 50px;
     font-size: 20px;
+    justify-content: space-between;
   }
 
   #description p{
