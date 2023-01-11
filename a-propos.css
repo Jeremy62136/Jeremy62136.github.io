@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tangerine', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover{
+    color: brown;
+    transition: 700ms;
+}
+
+p{
+    font-size: 1.8em;
+    color: brown;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 4em;
+    text-shadow: -3px 9px 10px brown;
+    margin-bottom: 60px;
+}
+
+/* HEADER */
+
+header{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    box-shadow: -5px -8px 20px 20px brown;
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+
+}
+
+.logo{
+    font-size: 3.5em;
+    margin-left: 20px;
+}
+
+.heart{
+    color: brown;
+}
+
+header nav{
+    margin-right: 80px;
+    font-size: 2em;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+
+/* MAIN */
+
+main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto 0px auto;
+    text-align: center;
+    
+}
+.presentation{
+    text-align: center;
+}
+
+main h2{
+    margin-bottom: 40px;
+}
+
+main p{
+    margin: 60px auto;
+}
+
+.mon-parcours{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    
+    padding: 30px;
+}
+
+.mon-parcours p{
+    width: 50%;
+}
+
+section.mon-shop{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 60px;
+}
+
+.mon-shop p{
+    width: 50%;
+}
+
+#logo-shop,
+.img-bertoux img{
+    width: 300px;
+    height: 350px;
+    margin-top: 60px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px 15px brown;
+    border: 3px solid whitesmoke;
+}
+
+.mon-shop .reseaux img{
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    border: 4px solid whitesmoke;
+    border-radius: 40px;
+    
+}
+
+.mon-shop .reseaux img:hover{
+    transition: 1000ms;   
+    border-color: brown; 
+    box-shadow: 0px 0px 10px 2px brown;
+}
+
+.img-shop{
+    width: 35%;
+    max-height: max-content;
+    border-radius: 50px;
+}
+
+.img-shop .reseaux a{
+    margin: 20px;
+}
+
+.mon-shop .reseaux{
+    background-color: black;
+    width: 200px;
+    border-radius: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px
+}
+/* FOOTER */
+
+footer{
+    height: 100px;
+    background: black;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 7px 20px 20px brown;
+    opacity: 0.9;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+    border: 4px solid whitesmoke;
+    border-radius: 40px;
+    margin-right: 40px;
+}
+
+footer img:hover{
+    border-color: brown;
+    transition: 700ms;
+    box-shadow: 0px 0px 20px 2px brown;
+}
+
+.reseaux{
+    margin: auto;
+}
+
+
+
+@media  screen and (max-width : 1200px) {
+
+    section.mon-parcours,
+    section.mon-shop,
+    div.img-shop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+    
+
+
+
+@media screen and (max-width : 1000px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        max-height: max-content;
+        }
+
+    .logo{
+        font-size: 2em;
+    }
+
+
+    header nav{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header nav ul{
+        display: block;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        font-size: 0.8em;
+        margin: auto;
+      }
+    
+}
+
+@media screen and (max-width : 630px){
+
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    header nav{
+        margin: 10px auto;
+    }
+
+    header nav ul li{
+        padding-right: 10px;
+    }
+
+    h2.first-h2,
+    h2.second-h2{
+        font-size: 2.5em;
+        margin: 0px;
+    }
+
+    footer .reseaux{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    footer img{
+        margin-right: 30px;
+        height: 40px;
+        width: 40px;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .img-bertoux img,
+    img#logo-shop{
+        height: 250px;
+        width: 250px;
+    }
+
+    p{
+        margin: 60px 0;
+    }
+
+    section.mon-parcours{
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+
+}
